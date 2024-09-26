@@ -2,7 +2,7 @@
 
 # Linguaguem usada para realizar - PHP 
 
-# Exercicios Propostos 
+ Exercícios Propostos 
 
 # Contato 
 
