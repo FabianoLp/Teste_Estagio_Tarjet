@@ -5,7 +5,9 @@
  Exercícios Propostos 
 
 # Contato 
-fabianomontaro@gmail.com
+E-mail : fabianomontaro@gmail.com
+Linkdin: https://www.linkedin.com/in/fabianolopessilva/
+
 
 # Atenciosamente
 Fabiano Lopes 
