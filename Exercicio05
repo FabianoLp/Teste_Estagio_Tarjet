@@ -1,0 +1,45 @@
+<?php
+function descobrirInterruptores() {
+    // Estado inicial das lâmpadas
+    $lampadas = [
+        'lampada1' => 'desligada',
+        'lampada2' => 'desligada',
+        'lampada3' => 'desligada'
+    ];
+
+    // Passo 1: Ligue o primeiro interruptor e deixe-o ligado por alguns minutos
+    $lampadas['lampada1'] = 'quente'; // Simulando que a lâmpada ficou quente
+
+    // Passo 2: Desligue o primeiro interruptor e ligue o segundo interruptor
+    $lampadas['lampada1'] = 'desligada';
+    $lampadas['lampada2'] = 'ligada';
+
+    // Passo 3: Vá até a sala das lâmpadas e verifique os estados
+    foreach ($lampadas as $lampada => $estado) {
+        if ($estado == 'ligada') {
+            echo "$lampada está ligada, corresponde ao segundo interruptor.\n";
+        } elseif ($estado == 'quente') {
+            echo "$lampada está quente, corresponde ao primeiro interruptor.\n";
+        } else {
+            echo "$lampada está fria, corresponde ao terceiro interruptor.\n";
+        }
+    }
+}
+
+descobrirInterruptores();
+
+// Lógica Aplicada
+
+/*
+Liguaria o primeiro interruptor e deixe-o ligado por alguns minutos.
+Desliguaria o primeiro interruptor e ligue o segundo interruptor.
+Indo Vá até a sala das lâmpadas:
+
+Resultado
+
+A lâmpada que está acesa corresponde ao segundo interruptor.
+A lâmpada que está apagada, mas quente, corresponde ao primeiro interruptor.
+A lâmpada que está apagada e fria corresponde ao terceiro interruptor.
+*/
+?>
+

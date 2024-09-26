@@ -1,0 +1,20 @@
+<?php
+function verificarLetraA($string) {
+    // Converte a string para minúsculas para facilitar a contagem
+    $stringMinuscula = strtolower($string);
+    
+    // Conta a quantidade de vezes que a letra 'a' aparece
+    $quantidade = substr_count($stringMinuscula, 'a');
+    
+    // Verifica se a letra 'a' está presente na string
+    if ($quantidade > 0) {
+        echo "A letra 'a' aparece $quantidade vezes na string.";
+    } else {
+        echo "A letra 'a' não está presente na string.";
+    }
+}
+
+// Exemplo de uso
+$string = "Amazônia é uma região incrível!";
+verificarLetraA($string);
+?>

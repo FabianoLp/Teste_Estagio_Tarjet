@@ -1,0 +1,33 @@
+<?php
+function proximoElemento($sequencia) {
+    $ultimo = end($sequencia);
+    $penultimo = prev($sequencia);
+
+    switch ($sequencia) {
+        case [1, 3, 5, 7]:
+            return $ultimo + 2; // Sequência de números ímpares
+        case [2, 4, 8, 16, 32, 64]:
+            return $ultimo * 2; // Sequência de potências de 2
+        case [0, 1, 4, 9, 16, 25, 36]:
+            $n = sqrt($ultimo) + 1;
+            return $n * $n; // Sequência de quadrados perfeitos
+        case [4, 16, 36, 64]:
+            $n = sqrt($ultimo) + 2;
+            return $n * $n; // Sequência de quadrados de números pares
+        case [1, 1, 2, 3, 5, 8]:
+            return $ultimo + $penultimo; // Sequência de Fibonacci
+        case [2, 10, 12, 16, 17, 18, 19]:
+            return $ultimo + 1; // Sequência sem padrão claro, incrementando por 1
+        default:
+            return "Sequência não reconhecida.";
+    }
+}
+
+// Testando as sequências
+echo "a) " . proximoElemento([1, 3, 5, 7]) . "\n";
+echo "b) " . proximoElemento([2, 4, 8, 16, 32, 64]) . "\n";
+echo "c) " . proximoElemento([0, 1, 4, 9, 16, 25, 36]) . "\n";
+echo "d) " . proximoElemento([4, 16, 36, 64]) . "\n";
+echo "e) " . proximoElemento([1, 1, 2, 3, 5, 8]) . "\n";
+echo "f) " . proximoElemento([2, 10, 12, 16, 17, 18, 19]) . "\n";
+?>

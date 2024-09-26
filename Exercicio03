@@ -1,0 +1,14 @@
+<?php
+//inicializa as variáveis $INDICE, $SOMA e $K
+$INDICE = 12;
+$SOMA = 0;
+$K = 1;
+// entra em um loop while que continua enquanto $K for menor que $INDICE
+
+// Dentro do loop, $K é incrementado em 1 e o valor de $K é adicionado a $SOMA
+while ($K < $INDICE) {
+    $K = $K + 1;
+    $SOMA = $SOMA + $K;
+}
+// o valor de $SOMA é impresso
+echo "SOMA: $SOMA";

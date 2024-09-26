@@ -1,0 +1,32 @@
+<?php
+function isFibonacci($num) {
+    // Função para verificar se um número pertence à sequência de Fibonacci
+    $a = 0;
+    $b = 1;
+    
+    if ($num == $a || $num == $b) {
+        return true;
+    }
+    
+    $c = $a + $b;
+    while ($c <= $num) {
+        if ($c == $num) {
+            return true;
+        }
+        $a = $b;
+        $b = $c;
+        $c = $a + $b;
+    }
+    
+    return false;
+}
+
+// Número a ser verificado
+$numero = 21;
+
+if (isFibonacci($numero)) {
+    echo "O número $numero pertence à sequência de Fibonacci.";
+} else {
+    echo "O número $numero não pertence à sequência de Fibonacci.";
+}
+?>
