@@ -5,10 +5,11 @@
  Exercícios Propostos 
 
 # Contato 
+fabianomontaro@gmail.com
 
 # Atenciosamente
 Fabiano Lopes 
-fabianomontaro@gmail.com
+
 
 
 Técnica:
